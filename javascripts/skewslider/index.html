@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SkewSlider 2.0 :: Premium Image Slider</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Core Skewslider styles -->
+        <link rel="stylesheet" href="css/skw-core.css">
+
+         <!-- Core Skewslider styles -->
+        <link rel="stylesheet" href="css/skw-default.css">
+       
+        <!-- Main demo page CSS styles -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Modernizr - Browser features detection -->  
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- Istok font from google fonts --> 
+        <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- Icon font from http://icomoon.io/ -->
+        <link rel="stylesheet" href="icons/style.css"></head>
+    </head>
+    <body class="main-page">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="clearfix">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt="SkewSlider" /></a>
+            <nav>
+                <ul>
+                   <li><a href="#features">Features</a></li>
+                   <li><a href="#examples">Examples</a></li>
+                   <li><a href="documentation.html">Docs</a></li>
+                   <li class="get"><a href="http://codecanyon.net/item/skewslider-jquery-slider-plugin/7592260">Buy It</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-slide" id="slide1">
+             <div class="skw-slide" data-bg="img/landscape4.jpg">
+                <div class="caption skw-caption">
+                    <h2>New SkewSlider 2.0</h2> 
+                </div>
+            </div>
+            <div class="skw-slide" data-bg="img/landscape2.jpg">
+                <div class="caption skw-caption">
+                    <h2>Improved Performance</h2>
+                </div>
+            </div>
+            <div class="skw-slide" data-bg="img/landscape7.jpg">
+                <div class="caption skw-caption">
+                    <h2>Native Javascript - Framework Free</h2> 
+                </div>
+            </div>
+            <div class="skw-slide" data-bg="img/landscape10.jpg">
+                <div class="caption skw-caption">
+                    <h2><a href="#responsive">Responsive Features</a></h2> 
+                </div>
+            </div>
+            <div class="skw-slide" data-bg="img/landscape3.jpg">
+                <div class="caption skw-caption">
+                    <h2>Auto Image Scaling</h2> 
+                </div>
+            </div>
+             <div class="skw-slide" data-bg="img/landscape6.jpg">
+                <div class="caption skw-caption">
+                    <h2><a href="#examples">Highly customizable</a></h2> 
+                </div>
+            </div>
+        </div>
+
+        <div class="info seef"><a class="anchor" id="features"></a>
+            <a href="#features"><h3>See All Features</h3></a>
+            <a href="#features"><span class="icon-arrow-down"></span></a>
+        </div>
+
+        <section class="features" id="features">
+            <div class="feature">
+                <h4>Highly customizable</h4>
+                <p>20+ javascript options, 10 ready to use examples, almost infinite combinations using the live update method. </p>
+            </div>
+            <div class="feature">
+                <h4>Responsive features</h4>
+                <p>Supports diferent configuration options for diferent screen sizes, as many breakpoints as you want, just like css media querys.</p>
+            </div>
+            <div class="feature">
+                <h4>Slide animations</h4>
+                <p>Customizable animations and CSS Transitions.</p>
+            </div>
+            <div class="feature">
+                <h4>Auto image scaling</h4>
+                <p>Images are automatically scaled to always fit the area no matter the inclination or the slide's dimensions.</p>
+            </div>
+            <div class="feature">
+                <h4>HTML content and CSS transitions</h4>
+                <p>Supports any HTML content and CSS custom transitions inside the slides. 2 active states, on animation start, on animation end.</p>
+            </div>
+            <div class="feature">
+                <h4>Image pre-load</h4>
+                <p>You decide how many images want to pre-load.</p>
+            </div>
+            <div class="feature">
+                <h4>Powerful Api</h4>
+                <p>Using the public methods, you can extend the slider functionality with just a few lines of code.</p>
+            </div>
+             <div class="feature">
+                <h4>Lifetime support</h4>
+                <p>Feel free to ask for help if something went wrong. Support is provided by developers.</p>
+            </div>
+             <div class="feature">
+                <h4>Free updates coming soon</h4>
+                <p>Slider is in active improvement and development, and of course, you get the updates for free.</p>
+            </div>
+
+        </section>
+
+        <section class="demos"><a class="anchor" id="examples"></a>
+            <h2>Examples</h2>
+            <h3>Slider with captions - fill mode</h3>
+             <div class="main-slide" id="slider2">
+                <div class="skw-slide" data-bg="img/landscape1.jpg">
+                     <div class="gallery-caption">
+                          Caption supports any html content
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape2.jpg">
+                      <div class="gallery-caption">
+                          Caption animations controlled via css
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape3.jpg">
+                    <div class="gallery-caption">
+                          Different in/out animation states
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape4.jpg">
+                    <div class="gallery-caption">
+                          Fill mode for automatic image scaling
+                     </div>
+                </div>
+            </div>
+
+             <h3>Slider without captions - fit mode</h3>
+             <div class="main-slide" id="slider3">
+                <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+            </div>
+
+            <h3>Full width slider with visible siblings</h3>
+        </section>
+            <div class="main-slide" id="slider4">
+                <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+            </div>
+        <section class="demos">
+             <h3>Full width slider - fit mode</h3>
+        </section>
+             <div class="main-slide" id="slider5">
+                <div class="skw-slide" data-bg="img/landscape1.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape5.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape6.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape2.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape3.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+            </div>
+
+         <section class="demos">
+              <h3>Boxed skew Carousel</h3>
+              <div class="main-slide" id="slider6">
+                <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+             </div>
+
+             <h3>Full width skew Carousel</h3>
+        </section>   
+             <div class="main-slide" id="slider7">
+                <div class="skw-slide" data-bg="img/landscape1.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape5.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape6.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape2.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape3.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+             </div> 
+
+        <section class="demos">
+              <h3>Boxed Image Carousel</h3>
+              <div class="main-slide" id="slider8">
+                <div class="skw-slide" data-bg="img/landscape1.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape5.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape6.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape2.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape3.jpg"></div>
+                <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+             </div>
+        </section>  
+
+        <section class="demos">
+              <br /><br /><br /><br />
+              <h2>Live Update Method</h2>
+              <p>You can update any option at any time using the live update method to create interactive sliders.</p>
+              <h3 style="margin-top: 30px">Expandable image carousel</h3>
+        </section>  
+
+             <div class="main-slide update1" id="slider9">
+                <div class="skw-slide" data-bg="img/landscape1.jpg">
+                     <div class="gallery-caption">
+                          Image Caption
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape8.jpg">
+                     <div class="gallery-caption">
+                          Image Caption
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape9.jpg">
+                     <div class="gallery-caption">
+                          Image Caption
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape4.jpg">
+                     <div class="gallery-caption">
+                          Image Caption
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape5.jpg">
+                     <div class="gallery-caption">
+                          Image Caption
+                     </div>
+                </div>
+                <div class="skw-slide" data-bg="img/landscape6.jpg">
+                     <div class="gallery-caption">
+                          Image Caption
+                     </div>
+                </div>
+                <span class="close fa fa-close"></span>
+             </div>
+
+        <section class="demos update2">
+               <h3>Switching between image align modes</h3>
+               <div class="main-slide" id="slider10">
+                  <div class="skw-slide" data-bg="img/landscape4.jpg"></div>
+                  <div class="skw-slide" data-bg="img/landscape7.jpg"></div>
+                  <div class="skw-slide" data-bg="img/landscape10.jpg"></div>
+                  <div class="skw-slide" data-bg="img/landscape8.jpg"></div>
+                  <div class="skw-slide" data-bg="img/landscape9.jpg"></div>
+                  <div class="slide-button"></div>
+               </div>
+        </section>                
+
+
+        <section class="responsive" id="responsive"><br /><br />
+            <h2>Responsive</h2>
+            <img src="img/responsive.png" />
+            <p>Slider is responsive by default, but if you want to have more control on how your content is displayed across diferent devices, you can take advantage of the responsive features, setting diferent configuration options for diferent screen sizes, as many breakpoints as you want, just like css media querys.</p> 
+            <span class="get"><a  href="http://codecanyon.net/item/skewslider-jquery-slider-plugin/7592260">Get It on Envato</a></span>
+        </section>
+        
+        <script src="js/plugins.js"></script>
+        <script src="js/skewSliderSvg.js"></script>
+        <script src="js/main.js"></script>
+        
+        
+    </body>
+    <script type="text/javascript">
+        (function() {
+          
+
+           var slider1 = new skewSlider('#slide1', { 
+              height: 350, 
+              ratio: 12/40,
+              navigationDots: false, 
+              imgAlign: 'xMidYMid slice', 
+              slidePercent: 82, 
+              visibleSiblings: 1, 
+              navigationArrows: false, 
+              siblingsNavigation: true, 
+              slideMargin: 0, 
+              slideShow: 4000, 
+              stopSlideshowOnHover: true,
+              skew: -25,
+              animationTime: 800,
+              breakpoints: {
+                  tablet: {
+                      maxWidth : 1024,
+                      ratio: 0.5
+                  }
+              }   
+            });
+
+             var slider2 = new skewSlider('#slider2', {
+                  height: 400,
+                  navigationDots: false
+             });
+
+             var slider3 = new skewSlider('#slider3', {
+                  height: 400,
+                  imgAlign: 'xMidYMid meet',
+                  animationEasing: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
+                  animationTime: 400
+             });
+
+             var slider4 = new skewSlider('#slider4', {
+                  height: 350,
+                  imgAlign: 'xMidYMid slice',
+                  slidePercent: 80,
+                  visibleSiblings: 1,
+                  navigationArrows: false,
+                  siblingsNavigation: true,
+                  slideMargin: 10
+                  
+             });
+
+             var slider5 = new skewSlider('#slider5', {
+                  height: 500,
+                  imgAlign: 'xMidYMid meet',
+                  slidePercent: 50,
+                  animatedAddRemove: true,
+                  slideMargin: 150  
+             });
+
+              var slider6 = new skewSlider('#slider6', {
+                  height: 280,
+                  navigationDots: false,
+                  navigationArrows: false,
+                  siblingsNavigation: true,
+                  slidePercent: 44,
+                  skew: -30,
+                  visibleSiblings: 2,
+                  positionsToMove: 3,
+                  animationTime: 700,
+                  breakpoints: {
+                        tablet: {
+                            maxWidth : 1024,
+                            slidePercent : 45,
+                            visibleSiblings : 2,
+                            skew : -19,
+                            imgAlign: 'xMidYMid slice',
+                            navigationDots: true,
+                            siblingsNavigation: false,
+                            navigationArrows: true,
+                            height: 300
+                        },
+                        phone: {
+                            maxWidth : 624,
+                            skew : -15,
+                            navigationDots: true,
+                            showCaption: false,
+                            positionsToMove: 1,
+                            height: 250,
+                            slidePercent: 90
+                        }
+                    }      
+             });
+
+            var slider7 = new skewSlider('#slider7', {
+                  height: 350,
+                  navigationDots: false,
+                  navigationArrows: true,
+                  siblingsNavigation: false,
+                  slidePercent: 35,
+                  skew: 20,
+                  visibleSiblings: 2,
+                  positionsToMove: 1,
+                  animationEasing: 'cubic-bezier(0.545, 0.06, 0.45, 0.75)',
+                  animationTime: 300,
+                  breakpoints: {
+                        tablet: {
+                            maxWidth : 1024,
+                            slidePercent : 45,
+                            visibleSiblings : 2,
+                            skew : -19,
+                            imgAlign: 'xMidYMid slice',
+                            navigationDots: true,
+                            siblingsNavigation: false,
+                            navigationArrows: true,
+                            height: 300
+                        },
+                        phone: {
+                            maxWidth : 624,
+                            skew : -15,
+                            navigationDots: true,
+                            showCaption: false,
+                            positionsToMove: 1,
+                            height: 250,
+                            slidePercent: 90,
+                            navigationDots: false
+                        }
+                    }      
+             });
+
+            var slider8 = new skewSlider('#slider8', {
+                  height: 350,
+                  navigationDots: false,
+                  navigationArrows: true,
+                  siblingsNavigation: false,
+                  removeSlides: false,
+                  centerSlides: false,
+                  slidePercent: 33.4,
+                  skew: 0,
+                  visibleSiblings: 2,
+                  positionsToMove: 3,
+                  animationTime: 600,
+                  breakpoints: {
+                        tablet: {
+                            maxWidth : 1024,
+                            slidePercent: 50,
+                            visibleSiblings: 1,
+                            positionsToMove: 2
+                        },
+                        phone: {
+                            maxWidth : 624,
+                            slidePercent: 100,
+                            visibleSiblings: 0,
+                            positionsToMove: 1
+                        }
+                    }        
+             });
+
+            // ================ slider9 ============== //
+
+            var slider9 = new skewSlider('#slider9', {
+                  height: 330,
+                  navigationDots: false,
+                  navigationArrows: false,
+                  siblingsNavigation: true,
+                  removeSlides: true,
+                  slidePercent: 40,
+                  slideShow: 4000,
+                  stopSlideshowOnHover: true,
+                  skew: -25,
+                  visibleSiblings: 2,
+                  positionsToMove: 1,
+                  animationTime: 400, 
+                  slideMargin: 0,
+                  updateTime: 300,
+                  updateEasing: 'ease-in-out',
+                  animationEasing: 'ease-in-out', 
+                  showCaption: false,
+                  onWindowResize: sliderResize,
+                  breakpoints: {
+                        tablet: {
+                            maxWidth : 1024,
+                            slidePercent : 45,
+                            visibleSiblings : 2,
+                            skew : -19,
+                            imgAlign: 'xMidYMid slice',
+                            navigationDots: true,
+                            siblingsNavigation: false,
+                            navigationArrows: true,
+                            height: 300
+                        },
+                        phone: {
+                            maxWidth : 624,
+                            skew : -15,
+                            navigationDots: true,
+                            showCaption: false,
+                            positionsToMove: 1,
+                            height: 250,
+                            slidePercent: 90
+                        }
+                    }      
+             });
+   
+             var slideNode = document.querySelector('.update1'),
+                 updateOptions = {
+                            slidePercent: 80,
+                            slideMargin: 10,
+                            visibleSiblings : 0,
+                            removeSlides: true,
+                            slideShow: false,
+                            positionsToMove: 1,
+                            animationEasing: 'ease',
+                            onWindowResize: sliderResize,
+                            height: 440,
+                            imgAlign: 'xMidYMid slice',
+                            navigationDots: true,
+                            animatedAddRemove: true,
+                            navigationArrows: true,
+                            updateTime: 300,
+                            siblingsNavigation: false,
+                            skew: 0,
+                            animationTime: 900,
+                            showCaption: true
+                        };
+
+             slideNode.addEventListener('click', function(event){ 
+                    
+                    if( !slideNode.classList.contains('opened') && event.target.href ) {
+                          if ( event.target.parentNode.parentNode.classList[0] == 'skw-currentSlideBefore' ) {
+                               slider9.update(updateOptions, function(){
+                                    slideNode.classList.add('opened');
+                               });
+                          } else if ( event.target.href ) {
+                              var position = event.target.parentNode.parentNode.dataset.pos;
+
+                              slider9.goTo(position, function(){
+                                   slider9.update(updateOptions, function(){
+                                      slideNode.classList.add('opened');
+                                   });
+                              });
+                          }    
+                           
+                    } else if ( event.target.classList.contains('close') ) {
+                      slider9.update(null, function(){
+                         slideNode.classList.remove('opened'); 
+                      });
+                    }
+
+             });
+
+             document.onkeydown = function(e) {
+                  e = e || window.event;
+                  switch(e.which || e.keyCode) {
+                      case 37: // left
+                        slider9.goTo('previous');
+                      break;
+
+                      case 39: // right
+                        slider9.goTo('next');  
+                      break;
+
+                      default: return; // exit this handler for other keys
+                  }
+                  e.preventDefault(); // prevent the default action (scroll / move caret)
+              }; 
+
+             function sliderResize () {
+                 slideNode.classList.remove('opened');
+             }
+
+             // ================ slider10 ============== //
+
+             var slider10 = new skewSlider('#slider10', {
+                  height: 400,
+                  navigationDots: true
+             });
+
+             var slideBtt = document.querySelector('#slider10 .slide-button'),
+                 slideUpdate2 = document.querySelector('.update2');
+
+             slideBtt.addEventListener('click', function(event){ 
+                  if(!slideUpdate2.classList.contains('opened')){
+                      slider10.update({
+                          imgAlign: 'xMidYMid meet',
+                          height: 400
+                      });
+                      slideBtt.style.backgroundImage = 'url(img/arrow-maximise.png)';
+                      slideUpdate2.classList.add('opened');
+                  } else {
+                       slider10.update({
+                          imgAlign: 'xMidYMid slice',
+                          height: 400
+                      });
+                      slideBtt.style.backgroundImage = 'url(img/arrow-minimise.png)';
+                      slideUpdate2.classList.remove('opened');
+                  }   
+              });
+         }());
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50629339-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</html>

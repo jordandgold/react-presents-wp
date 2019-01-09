@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SkewSlider :: Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="prettify/prettify.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="icons/style.css"></head>
+    </head>
+    <body class="doc">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="clearfix">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt="SkewSlider" /></a>
+            <nav>
+                <ul>
+                   <li><a href="#table">Table of Contents</a></li>
+                   <li><a href="#options">Options</a></li>
+                   <li><a href="#css">CSS Selectors</a></li>
+                   <li><a href="#api">Methods</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="doc">
+          <a class="anchor" id="table"></a>
+          <h2>Table of Contents</h2>
+          <ol class="alpha">
+            <li><a href="#including-external-files">Including External Files</a></li>
+            <li><a href="#html-structure">HTML Structure</a></li>
+            <li><a href="#initialization">Initialization</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#captions">Captions</a></li>
+            <li><a href="#options">Options</a></li>
+            <li><a href="#responsive-features">Responsive Features</a></li>
+            <li><a href="#css">CSS Selectors</a></li>
+            <li><a href="#api">Plugin Methods</a></li>
+          </ol>
+    
+        </section>
+
+        <section class="doc"><a class="anchor" id="start"></a>
+            <h2>Getting Started</h2>
+            <a class="anchor" id="including-external-files"></a>
+            <h3>1. Including External Files</h3>
+            <p>Add the required files in your page. </p>
+            <div class="code">
+                <xmp class="prettyprint" id="htmlXmp">
+                     <!-- Core Skewslider styles -->
+                     <link rel="stylesheet" href="css/skw-core.css">
+
+                     <!-- Default Skewslider theme -->
+                     <link rel="stylesheet" href="css/skw-default.css">
+
+                     <!-- The Plugin -->
+                     <script src="js/skewSliderSvg.js"></script>
+                </xmp>  
+            </div>
+            <a class="anchor" id="html-structure"></a>
+            <h3>2. HTML Structure</h3>
+            <p>Add the following markup, each slide needs a skw-slide class and a data-bg attribute.</p>
+
+            <div class="code">
+                <xmp class="prettyprint" id="htmlXmp">
+                     <div id="slider1">
+                        <div class="skw-slide" data-bg="img/1.jpg"></div>
+                        <div class="skw-slide" data-bg="img/2.jpg"></div>
+                        <div class="skw-slide" data-bg="img/3.jpg"></div>
+                     </div>
+                </xmp>  
+            </div>
+            
+            <a class="anchor" id="initialization"></a>
+            <h3>3. Initialization</h3>
+            <p> Initialize the slider at the end of the body section. see <a href="#options">Options</a> section for slider settings.</p>
+
+            <div class="code">
+                <xmp class="prettyprint" id="htmlXmp">
+                    <script>
+                        
+                        var slider1 = new skewSlider('#slider1', {
+                              // options go here
+                              height: 400,
+                              navigationDots: false
+                        });
+                       
+                    </script>
+                </xmp>  
+            </div>
+
+            <a class="anchor" id="images"></a>
+            <h3>4. Images</h3>
+            <p>You can add images via data-bg attribute on each slide.</p>
+
+            <div class="code">
+                <xmp class="prettyprint" id="htmlXmp">
+                     <div id="slider1">
+                        <div class="skw-slide" data-bg="path/to/image 1"></div>
+                        <div class="skw-slide" data-bg="path/to/image 2"></div>
+                        <div class="skw-slide" data-bg="path/to/image 3"></div>
+                        ...
+                     </div>
+                </xmp>  
+            </div>
+
+            <a class="anchor" id="captions"></a>
+            <h3>5. Captions</h3>
+            <p>To add captions put any html inside each slide.</p>
+
+            <div class="code">
+                <xmp class="prettyprint" id="htmlXmp">
+                   <div id="slider1">
+                      <div class="skw-slide" data-bg="img/1.jpg">
+                           <div>
+                                Image Caption 1
+                           </div>
+                      </div>
+                      <div class="skw-slide" data-bg="img/2.jpg">
+                           <div>
+                                Image Caption 2
+                           </div>
+                      </div>
+                      <div class="skw-slide" data-bg="img/3.jpg">
+                           <div>
+                                Image Caption 3
+                           </div>
+                      </div>
+                      ...
+                   </div>
+                </xmp>  
+            </div>
+
+           
+        </section>
+
+        <section class="doc"><a class="anchor" id="options"></a>
+            <h2>Options</h2>
+
+            <table>
+               <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Supported types</th>
+                  <th>Default</th>
+               </tr>
+               <tr>
+                  <td><p>setCurrent</p></td>
+                  <td><p>starting position</p></td>
+                  <td><p>number</p></td>
+                  <td><p>0</p></td>
+               </tr>
+               <tr>
+                  <td><p>animationTime</p></td>
+                  <td><p>Animation duration in milisecons (ms).</p></td>
+                  <td><p>number</p></td>
+                  <td><p>800</p></td>
+               </tr>
+               <tr>
+                  <td><p>animationEasing</p></td>
+                  <td><p>CSS3 animation timing function.</p></td>
+                  <td><p>string</p></td>
+                  <td><p>ease</p></td>
+               </tr>
+                <tr>
+                  <td><p>skew</p></td>
+                  <td><p>inclination of the slide in degrees, can be positive or negative</p></td>
+                  <td><p>number</p></td>
+                  <td><p>-25</p></td>
+               </tr>
+               <tr>
+                  <td><p>height</p></td>
+                  <td><p>total height of the slider in pixels</p></td>
+                  <td><p>number</p></td>
+                  <td><p>280</p></td>
+               </tr>
+                <tr>
+                  <td><p>ratio</p></td>
+                  <td><p>defines the aspect ratio of the slide, ignores the height value. set to false if you want to use the height value.</p></td>
+                  <td><p>number</p></td>
+                  <td><p>false</p></td>
+               </tr>
+                <tr>
+                  <td><p>slidePercent</p></td>
+                  <td><p>percent width of each slide relative to the slider width</p></td>
+                  <td><p>number</p></td>
+                  <td><p>100</p></td>
+               </tr>
+                <tr>
+                  <td><p>centerSlides</p></td>
+                  <td><p>do you want to center the active slide?</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>true</p></td>
+               </tr>
+                <tr>
+                  <td><p>navigationDots</p></td>
+                  <td><p>enable / disable dot navigation</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>true</p></td>
+               </tr>
+               <tr>
+                  <td><p>navigationArrows</p></td>
+                  <td><p>enable / disable arrows navigation</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>true</p></td>
+               </tr>
+               <tr>
+                  <td><p>siblingsNavigation</p></td>
+                  <td><p>enable / disable sibling slide navigation</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>true</p></td>
+               </tr>
+                <tr>
+                  <td><p>breakpoints</p></td>
+                  <td><p>an object containing different configuration options for different screen sizes (see responsive features), set to false to disable</p></td>
+                  <td><p>javascript object, boolean</p></td>
+                  <td><p>false</p></td>
+               </tr>
+                <tr>
+                  <td><p>showCaption</p></td>
+                  <td><p>enable / disable captions</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>true</p></td>
+               </tr>
+                <tr>
+                  <td><p>positionsToMove</p></td>
+                  <td><p>how many items do you want to move per click</p></td>
+                  <td><p>number</p></td>
+                  <td><p>1</p></td>
+               </tr>
+               <tr>
+                  <td><p>visibleSiblings</p></td>
+                  <td><p>how many sibling slides starting from the current do you want to render (load)</p></td>
+                  <td><p>number</p></td>
+                  <td><p>1</p></td>
+               </tr>
+               <tr>
+                  <td><p>updateTime:</p></td>
+                  <td><p>update animation time in miliseconds (ms)</p></td>
+                  <td><p>number</p></td>
+                  <td><p>300</p></td>
+               </tr>
+               <tr>
+                  <td><p>updateEasing</p></td>
+                  <td><p>CSS3 animation timing function of update transition</p></td>
+                  <td><p>number</p></td>
+                  <td><p>1</p></td>
+               </tr>
+               <tr>
+                  <td><p>removeSlides</p></td>
+                  <td><p>if true, the slider will remove all the slides once they get out of view.</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>false</p></td>
+               </tr>
+               <tr>
+                  <td><p>animatedAddRemove</p></td>
+                  <td><p>add and remove items with opacity transition, may slow down the performance, activate it only if needed.</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>false</p></td>
+               </tr>
+               <tr>
+                  <td><p>slideMargin</p></td>
+                  <td><p>space in pxels between slides.</p></td>
+                  <td><p>number</p></td>
+                  <td><p>0</p></td>
+               </tr>
+               <tr>
+                  <td><p>imgAlign</p></td>
+                  <td><p>a string with two key words to control the image alignment. the first key word is for positioning (see detailed info <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio#Usage_context">here</a>) and the second key word controls the scale / crop of the image, for fit mode use meet and for fill mode use slice.</p></td>
+                  <td><p>string</p></td>
+                  <td><p>'xMidYMid slice'</p></td>
+               </tr>
+               <tr>
+                  <td><p>slideShow</p></td>
+                  <td><p>time in milisecons (ms) between automatic slideshow animations. set to false to disable</p></td>
+                  <td><p>number, boolean</p></td>
+                  <td><p>false</p></td>
+               </tr>
+               <tr>
+                  <td><p>stopSlideshowOnHover</p></td>
+                  <td><p>if true the slideshow will stop when the mouse enters the slider.</p></td>
+                  <td><p>boolean</p></td>
+                  <td><p>true</p></td>
+               </tr>
+               <tr>
+                  <td><p>onMarkupReady(callback)</p></td>
+                  <td><p>a function that fires when the slider markup is ready</p></td>
+                  <td><p>callback function</p></td>
+                  <td><p>null</p></td>
+               </tr>
+               <tr>
+                  <td><p>onWindowResize(callback)</p></td>
+                  <td><p>a function that fires when the slider is updated after a window resize</p></td>
+                  <td><p>callback function</p></td>
+                  <td><p>null</p></td>
+               </tr>
+            </table>
+        </section>
+
+        <section class="doc">
+           <a class="anchor" id="responsive-features"></a>
+           <h2>Responsive Features</h2>
+           <p>you can use the breakpoints option to set different configuration options for different screen sizes, you can set as many breakpoints as you want, to create a new breakpoint, create a new object inside the breakpoints option, give it a name, and set the max width breakpoint using the 'maxWidth' option inside it,  for example:</p> 
+           <div class="code">
+                <xmp class="prettyprint" id="htmlXmp">
+                     breakpoints: {
+                          tablet: {
+                              maxWidth : 1024,
+                              slidePercent : 45,
+                              showCaption: false,
+                              skew: -15
+                          },
+                          phone: {
+                              maxWidth : 600,
+                              slidePercent : 65,
+                              skew: -12
+                          }
+                      }
+                </xmp>  
+            </div>
+            <p>And thats all, now you can override any option depending on the user viewport width.</p>
+        </section> 
+
+        <section class="doc"><a class="anchor" id="css"></a>
+            <h2>CSS Selectors</h2>
+            <p>List of css classes you may want to use for styling or controlling css animations / states</p>
+            <h3>skw-currentSlideBefore</h3>
+            <p>applied to the current slide at the beginning of the animation.</p>
+            <h3>skw-currentSlideAfter</h3>
+            <p>applied to the current slide when the animation is over.</p>
+            <h3>skw-prevSlide</h3>
+            <p>applied to the previous slide.</p>
+            <h3>skw-nextSlide</h3>
+            <p>applied to the next slide.</p>
+        </section>  
+
+        <section class="doc"><a class="anchor" id="api"></a>
+           <h2>Plugin Methods</h2>
+           <h3>Update</h3>
+           <p>Update the plugin options at any time with animated transitions. </p>
+           <div class="code">
+    <xmp class="prettyprint" id="htmlXmp">
+
+      // initialization
+      var slider1 = new skewSlider('#slider2', {
+                  height: 400,
+                  navigationDots: false
+      }); 
+
+      // basic usage - when used without new options, it will restore the original options.
+      slider1.update();
+
+      // setting new options
+      slider1.update({
+            slidePercent: 75,
+            skew: 0
+      });   
+    </xmp> </div> 
+
+     <h3>goTo</h3>
+           <p>Navigate to any slide</p>
+           <div class="code">
+    <xmp class="prettyprint" id="htmlXmp">
+      // parameters model
+      slider1.goTo(item position / direction string, callback);
+
+      // moving one position forward
+      slider1.goTo('next');
+
+      // moving one position backwards
+      slider1.goTo('previous');
+
+      // jumping to any position
+      slider1.goTo(4);
+         
+    </xmp>  
+            </div>
+        </section>       
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=js&skin=sunburst"></script>
+        <script src="prettify/prettify.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50629339-1', 'skewslider.com');
+      ga('send', 'pageview');
+
+    </script>
+  
+</html>

@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+  url("../fonts/flaticon.woff") format("woff"),
+  url("../fonts/flaticon.ttf") format("truetype"),
+  url("../fonts/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+[class^="flaticon-"].right-arrow:before, [class*=" flaticon-"].right-arrow:before,
+[class^="flaticon-"].right-arrow:after, [class*=" flaticon-"].right-arrow:after {
+  font-family: Flaticon;
+  font-size: 15px !important;
+  font-style: normal;
+}
+[class^="flaticon-"].festival:before, [class*=" flaticon-"].festival:before,
+[class^="flaticon-"].festival:after, [class*=" flaticon-"].festival:after {
+  font-size: 40px;
+  line-height: 40px;
+}
+[class^="flaticon-"].left:before, [class*=" flaticon-"].left:before,
+[class^="flaticon-"].left:after, [class*=" flaticon-"].left:after {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+[class^="flaticon-"].zoom:before, [class*=" flaticon-"].zoom:before,
+[class^="flaticon-"].zoom:after, [class*=" flaticon-"].zoom:after {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0px;
+  position: relative;
+  top: -20px;
+}
+[class^="flaticon-"].play:before, [class*=" flaticon-"].play:before,
+[class^="flaticon-"].play:after, [class*=" flaticon-"].play:after {
+  font-size: 55px;
+  line-height: 55px;
+  margin: 0px;
+  position: relative;
+  top: 0px;
+}
+
+[class^="flaticon-"].sb-share:before, [class*=" flaticon-"].sb-share:before,
+[class^="flaticon-"].sb-share:after, [class*=" flaticon-"].sb-share:after {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0px 5px 0px 0px;
+  position: relative;
+  top: 0px;
+}
+
+[class^="flaticon-"].event-arrow:before, [class*=" flaticon-"].event-arrow:before,
+[class^="flaticon-"].event-arrow:after, [class*=" flaticon-"].event-arrow:after {
+  font-size: 15px;
+  line-height: 15px;
+  margin: 0;
+}
+
+[class^="flaticon-"].shadowbox:before, [class*=" flaticon-"].shadowbox:before,
+[class^="flaticon-"].shadowbox:after, [class*=" flaticon-"].shadowbox:after {
+  font-family: Flaticon;
+  font-size: 25px !important;
+  font-style: normal;
+  margin: 0;
+}
+
+[class^="flaticon-"].news-social:before, [class*=" flaticon-"].news-social:before,
+[class^="flaticon-"].news-social:after, [class*=" flaticon-"].news-social:after {
+  font-family: Flaticon;
+  font-size: 15px !important;
+  line-height: 30px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.flaticon-arrow487:before {
+  content: "\e000";
+}
+.flaticon-arrow621:before {
+  content: "\e001";
+}
+.flaticon-arrowhead7:before {
+  content: "\e002";
+}
+.flaticon-chevron18:before {
+  content: "\e003";
+}
+.flaticon-chevron20:before {
+  content: "\e004";
+}
+.flaticon-envelope4:before {
+  content: "\e005";
+}
+.flaticon-facebook31:before {
+  content: "\e006";
+}
+.flaticon-instagram12:before {
+  content: "\e007";
+}
+.flaticon-left195:before {
+  content: "\e008";
+}
+.flaticon-play43:before {
+  content: "\e009";
+}
+.flaticon-right133:before {
+  content: "\e00a";
+}
+.flaticon-social19:before {
+  content: "\e00b";
+}
+.flaticon-youtube3:before {
+  content: "\e00c";
+}
+.flaticon-zoom75:before {
+  content: "\e00d";
+}
+
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+@import "main";

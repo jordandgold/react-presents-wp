@@ -1,0 +1,1039 @@
+$primary: #0faa96
+$primary_hover: #0b8878
+$dark_gray: #131618
+$dark_gray_hover: #43484c
+$primaryfont: 'Roboto'
+$agmedium: 'Roboto'
+$arialblack: 'Arial Black', arial, helvetica, sans-serif
+$transition: all .2s
+$pink: #b71250
+
+body, html
+  font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased
+  font-family: helvetica, arial, sans-serif
+  background: #ffffff
+
+::-moz-selection
+  color: #ffffff
+  background: $pink
+
+::selection
+  color: #ffffff
+  background: $pink
+
+.clear
+  clear: both
+
+a:hover, a:active, a:focus
+  outline: 0
+a:focus
+  text-decoration: none
+
+.top-nav
+  height: 70px
+  width: 100%
+  background: #ffffff
+  border-bottom: 1px solid #24292c
+
+.container.interior
+  padding-top: 30px
+
+a
+  transition: $transition
+a:hover
+  text-decoration: none !important
+
+p
+  margin: 0 0 30px 0
+
+p img
+  max-width: 100%
+  height: auto
+
+.gray_box
+  background: $dark_gray
+  color: #ffffff
+  padding: 30px
+
+.navbar-default .navbar-nav > li > a
+  font-family: 'Roboto', helvetica, arial, sans-serif
+  font-weight: 700
+  text-transform: lowercase
+  font-size: 17px
+
+.dropdown-menu
+  padding: 15px 15px 7px 15px
+  left: -15px
+  li
+    a
+      font-family: 'Roboto', helvetica, arial, sans-serif
+      text-transform: lowercase
+      font-size: 1.1em
+      line-height: 1.0em
+      padding: 0 0 15px 0
+      margin: 0 0 15px 0
+      border-bottom: 1px solid #222222
+      display: block
+      color: #ffffff
+    a:hover
+      background: transparent
+      color: $pink
+  li:last-child
+    a
+      margin-bottom: 0
+      border-bottom: 0
+
+a.button
+  background: $primary
+  color: #ffffff
+  display: inline-block
+  padding: 0px 18px
+  font-weight: bold
+  transition: all .2s
+  height: 45px
+  line-height: 45px
+  text-align: center
+  font-size: 1.3em
+
+a.button:hover
+  text-decoration: none
+  background: $primary_hover
+
+h2 
+  font-family: 'Arial Black', arial, helvetica, sans-serif
+  text-transform: lowercase
+  color: #1a1c1d
+  letter-spacing: -.08em
+  background: url(../img/header_bg_line.gif) center center repeat-x
+  margin-bottom: 20px
+  span
+    background: #ffffff
+    padding-right: 20px
+
+h2.news_title
+  background: transparent
+  margin-bottom: 10px
+.news_meta
+  background: #e3e3e3
+  padding: 0px
+  margin: 0 0 15px 0
+  .date
+    float: left
+    background: $pink
+    padding: 4px 10px
+    color: #ffffff
+    text-align: center
+    font-family: $primaryfont
+    margin-right: 20px
+    span.month
+      font-size: 12px
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 12px
+    span.day
+      font-size: 22px
+      text-transform: uppercase
+      line-height: 12px
+  .news_meta_content
+    font-size: 0.9em
+    font-weight: bold
+    color: #888888
+    line-height: 1.1em
+    padding-top: 9px
+.news_content
+  p
+    text-align: justify
+    font-size: 1.1em
+    line-height: 1.8em
+  .thumb
+    position: relative
+    img
+      max-width: 100%
+      height: auto
+    .news_share_single
+      position: absolute
+      top: 0px
+      right: 0px
+      z-index: 100
+      background: url(../img/black_trans.png)
+      padding: 8px 4px
+      a
+        width: 30px
+        height: 30px
+        border-radius: 15px
+        display: block
+        text-align: center
+        float: right
+        margin: 0 4px
+        transiton: $transition
+      a.fb
+        color: #ffffff
+        background: #3b5998
+        border: 1px solid #3b5998
+      a.twitter
+        color: #ffffff
+        background: #4099ff
+        border: 1px solid #4099ff
+      a:hover
+        border: 1px solid #FFFFFF
+        color: #FFFFFF
+        background: transparent
+
+.button_arrow
+  margin-top: 5px
+  text-transform: lowercase
+  font-weight: bold
+  display: block
+  height: 30px
+  text-align: left
+  line-height: 30px
+  background: $dark_gray
+  color: #ffffff
+  font-size: 1.2em
+  padding: 0 30px 0 10px
+  transition: $transition
+  font-family: $primaryfont
+  span
+    position: relative
+    top: 0px
+    right: -20px
+    font-size: 0.8em
+.button_arrow:hover
+  background: $primary
+  text-decoration: none
+  color: #ffffff
+
+.h2_container
+  position: relative
+  .header_button
+    position: absolute
+    right: 0
+    top: 0
+    display: inline-block
+    border-left: 20px solid #ffffff
+
+@media only screen and (max-width: 530px)
+  .h2_container
+    .header_button
+      display: none
+
+.upcoming-events
+  width: calc(100% + 30px)
+  margin-left: -15px
+  .event
+    background: black
+    text-align: center
+    height: 195px
+    background-size: cover
+    background-position: top center
+    border: 1px solid #c4c4c4
+    margin: 0px 15px
+    position: relative
+    padding: 0
+  a.background
+    display: block
+    width: 100%
+    height: 195px
+    background-size: cover
+  .caption
+    position: absolute
+    bottom: -38px
+    left: 0
+    width: 100%
+    background: url(../img/event_caption_bg.png) repeat
+    color: #ffffff
+    padding: 6px
+    text-align: left
+    font-family: $primaryfont
+    span.artists
+      font-weight: bold
+    .buy_tickets
+      margin-top: 5px
+      text-transform: lowercase
+      display: block
+      height: 30px
+      text-align: left
+      line-height: 30px
+      background: $primary
+      color: #ffffff
+      font-size: 1.2em
+      font-weight: bold
+      padding: 0 10px
+      span
+        float: right
+        position: relative
+        top: 0px
+        font-size: 0.9em
+    .buy_tickets:hover
+      background: $dark_gray
+  .date
+    position: absolute
+    top: 0
+    right: 0
+    background: $pink
+    padding: 4px 10px
+    color: #ffffff
+    text-align: center
+    font-family: $primaryfont
+    span.month
+      font-size: 12px
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 12px
+    span.day
+      font-size: 22px
+      text-transform: uppercase
+      line-height: 12px
+
+
+.logo 
+  padding-top: 20px
+  display: block
+  float: left
+  transition: $transition
+.logo:hover
+  opacity: 0.6
+
+ul.social-icons
+  list-style: none
+  height: 25px
+  margin-top: 20px
+  li
+    a
+      color: #131618
+      transition: $transition
+    a:hover
+      color: #777777
+      text-decoration: none
+.social_block
+  text-align: center
+  ul.festival_socials
+    list-style: none
+    height: auto
+    margin: 0
+    li
+      a
+        color: #ffffff
+        transition: $transition
+      a:hover
+        color: #777777
+        text-decoration: none
+
+
+.float_left
+  float: left
+
+.float_right
+  float: right
+
+.slideshow 
+  padding: 0
+  background: #0b0c0c
+  width: 100%
+  overflow: hidden
+
+#slider4
+  width: 100%
+
+.skw-content
+  .caption
+    h3.slide_title
+      font-family: $arialblack
+      text-transform: lowercase
+      font-size: 2.8em
+      color: #ffffff
+      letter-spacing: -.08em
+      margin: 0 0 15px 0
+      padding: 0
+    .tagline
+      margin: 0 0 10px 0
+      font-size: 1.3em
+      span
+        background: #000000
+        padding: 5px 8px
+    .button_group
+      .button_container
+        padding: 8px 10px 10px 10px
+        background: url(../img/black_trans.png)
+        width: auto
+        display: inline-block
+        .caption_button
+          margin: 5px 5px 0px 5px
+          text-transform: lowercase
+          font-weight: bold
+          display: inline-block
+          height: 35px
+          text-align: left
+          line-height: 35px
+          background: $primary
+          color: #ffffff
+          font-size: 1.1em
+          padding: 0 30px 0 15px
+          transition: $transition
+          font-family: $primaryfont
+          span
+            position: relative
+            top: 0px
+            right: -20px
+            font-size: 0.8em
+        .caption_button:hover
+          background: $primary_hover
+          text-decoration: none
+          color: #ffffff
+
+.skw-container li.skw-nextSlide svg image, .skw-container li.skw-prevSlide svg image
+  opacity: 0.4
+.skw-container li.skw-nextSlide:hover svg image, .skw-container li.skw-prevSlide:hover svg image
+  opacity: 1.0
+
+.tile
+  height: 20px
+  margin-top: 10px
+
+.a
+  background: #AAA
+.b
+  background: #BBB
+
+.news_item
+  margin-bottom: 25px
+  .thumb
+    width: 100%
+    height: 110px
+    background-size: cover
+    -webkit-background-size: cover
+    transition: all .5s
+    overflow: hidden
+    position: relative
+    .news_share
+      position: absolute
+      top: 0px
+      right: 0px
+      z-index: 100
+      display: none
+      background: url(../img/black_trans.png)
+      padding: 8px 4px
+      a
+        width: 30px
+        height: 30px
+        border-radius: 15px
+        display: block
+        text-align: center
+        float: right
+        margin: 0 4px
+        transiton: $transition
+      a.fb
+        color: #ffffff
+        background: #3b5998
+        border: 1px solid #3b5998
+      a.twitter
+        color: #ffffff
+        background: #4099ff
+        border: 1px solid #4099ff
+      a:hover
+        border: 1px solid #FFFFFF
+        color: #FFFFFF
+        background: transparent
+    .background
+      width: 100%
+      height: 110px
+      background-size: cover
+      transition: all .5s
+      display: block
+  .thumb.full
+    height: 235px
+    .background
+      height: 235px
+  .excerpt
+    background: #e3e3e3
+    padding: 15px
+    p
+      text-align: justify
+    .meta
+      margin-bottom: 15px
+      padding-bottom: 15px
+      border-bottom: 2px solid #bababa
+      .date
+        background: $pink
+        padding: 4px 10px
+        color: #ffffff
+        text-align: center
+        float: left
+        font-family: $primaryfont
+        margin-right: 15px
+        span.month
+          font-size: 12px
+          text-transform: uppercase
+          line-height: 12px
+          font-weight: bold
+        span.day
+          font-size: 22px
+          text-transform: uppercase
+          line-height: 12px
+      h3.title
+        margin: 0
+        padding: 0
+        font-family: $primaryfont
+        font-weight: bold
+        font-size: 1.3em
+        display: inline
+        a
+          color: $dark_gray
+          transition: $transition
+          position: relative
+          top: -3px
+        a:hover
+          color: $dark_gray_hover
+      h3.title.large
+        font-size: 1.8em
+  .read_more
+    display: block
+    background: $dark_gray
+    font-family: $primaryfont
+    height: 45px
+    line-height: 45px
+    padding: 0 15px
+    color: #ffffff
+    text-transform: lowercase
+    font-size: 1.2em
+    transition: $transition
+    font-weight: bold
+    span
+      float: right
+      position: relative
+      top: 0px
+  .read_more:hover
+    text-decoration: none
+    background: $dark_gray_hover
+    cursor: pointer
+  .thumb:hover > .background
+    -moz-transform: scale(1.1,1.1)
+    -webkit-transform: scale(1.1,1.1)
+    transform: scale(1.1,1.1)
+
+#sidebar
+  a.view_all
+    display: block
+    height: 45px
+    color: #ffffff
+    font-family: $primaryfont
+    font-weight: bold
+    text-transform: lowercase
+    font-size: 1.2em
+    text-align: left
+    line-height: 41px
+    transition: all .6s
+    padding: 0 15px
+    background: $dark_gray
+    span
+      float: right
+      position: relative
+      top: 0px
+  a.view_all:hover
+    background: $dark_gray_hover
+    text-decoration: none
+  .video_thumb
+    .thumb
+      width: 100%
+      height: 150px
+      background-size: cover
+      display: block
+    .read_more
+      display: block
+      background: $dark_gray
+      font-family: $primaryfont
+      padding: 10px 15px
+      color: #ffffff
+      text-transform: uppercase
+      transition: all .2s
+  .video_thumb:hover
+    text-decoration: none
+  .video_thumb:hover .thumb
+    text-decoration: none
+  .video_thumb:hover .read_more
+    background: #2f3336
+    text-decoration: none
+
+footer
+  padding: 30px 0
+  background: $dark_gray
+  margin-top: 30px
+  .copyright
+    font-family: 'Arial Black', arial, helvetica, sans-serif
+    text-transform: lowercase
+    color: #ffffff
+    letter-spacing: -.08em
+    font-size: 1.5em
+  .list_header
+    font-family: arial, helvetica, sans-serif
+    text-transform: uppercase
+    color: #ffffff
+    font-weight: bold
+    border-bottom: 1px solid #333333
+    margin: 0 0 15px 0
+    padding: 0 0 15px 0
+  ul.footer_links
+    list-style: none
+    margin: 0
+    padding: 0
+  ul.social-icons
+    float: left
+    li
+      a
+        color: #ffffff
+
+.interior_header
+  width: 100%
+  height: 300px
+  background-size: cover
+  display: table
+  h1
+    font-family: 'Arial Black', arial, helvetica, sans-serif
+    text-transform: lowercase
+    color: #ffffff
+    letter-spacing: -.08em
+    font-size: 4.8em
+    text-align: center
+    margin: 0
+    padding: 0 40px 0 40px
+    display: table-cell
+    vertical-align: middle
+    width: 100%
+    height: 100%
+  .gallery_info
+    display: table-cell
+    vertical-align: middle
+    width: 100%
+    height: 100%
+    .gallery_header
+      font-family: 'Arial Black', arial, helvetica, sans-serif
+      text-transform: lowercase
+      color: #ffffff
+      letter-spacing: -.08em
+      font-size: 3.8em
+      text-align: center
+      margin: 0
+      padding: 0 40px 0 40px
+    .gallery_meta
+      font-family: $primaryfont
+      font-weight: bold
+      font-size: 1.5em
+      font-weight: bold
+      color: #ffffff
+      margin: 0
+      padding: 0 40px 0 40px
+      text-align: center
+  .festival_logo_centered
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    width: 100%
+    height: 100%
+    img
+      max-width: 300px
+      max-height: 200px
+      height: auto
+      width: auto
+
+@media only screen and (max-width: 768px)
+  .gallery_info
+    .gallery_header
+      font-size: 2.2em !important
+
+.page_excerpt
+  font-size: 1.4em
+  color: #444444
+  margin-bottom: 25px
+
+@media only screen and (max-width: 768px)
+  .interior_header
+    height: 200px
+    .festival_logo_centered
+      img
+        max-width: 200px
+        height: auto
+
+.sidebar-nav 
+  padding: 9px 0
+
+.dropdown-menu .sub-menu
+  left: 100%
+  position: absolute
+  top: 0
+  visibility: hidden
+
+.dropdown-menu
+  border: 0px
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu
+  margin-top: 0
+
+.nav > li > a
+  padding: 0px 40px 0px 0px
+  line-height: 55px
+
+.container > .navbar-collapse
+  margin-left: -15px
+
+@media only screen and (max-width: 768px)
+  .container > .navbar-collapse
+    margin-left: -15px
+  .nav > li > a
+    padding: 10px 20px
+    line-height: 20px
+
+@media only screen and (min-width: 768px)
+  .dropdown-menu li:hover .sub-menu
+    visibility: visible
+  .dropdown:hover .dropdown-menu
+    display: block
+
+@media only screen and (max-width: 470px)
+  .social-icons
+    display: none
+
+.event_item
+  background: #222222
+  padding: 15px 0px
+  color: #ffffff
+  margin-bottom: 3px
+  transition: $transition
+  height: 50px
+  .date
+    width: 100%
+    background: $dark_gray_hover
+    padding: 4px 10px
+    color: #ffffff
+    text-align: center
+    font-family: $primaryfont
+    margin: -15px 0px -15px 0px
+    height: 50px
+    span.month
+      font-size: 11px
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 11px
+    span.day
+      font-size: 20px
+      text-transform: uppercase
+      line-height: 11px
+  .small_text
+    font-size: 0.9em
+    line-height: 23px
+  .event_buy_tickets
+    background: $primary
+    color: #ffffff
+    display: block
+    width: 100%
+    text-align: center
+    margin: -15px 0px -15px 1px
+    padding: 15px
+    transition: $transition
+  .event_buy_tickets:hover
+    background: $primary_hover
+.event_item:hover
+  background: #000000
+.event_table_head
+  margin-bottom: 10px
+  font-size: 1.2
+  font-weight: bold
+  text-transform: uppercase
+
+.navbar-toggle
+  border: 0px
+.navbar-toggle:hover, .navbar-toggle:focus
+  background: transparent !important
+
+.navbar-default .navbar-toggle .icon-bar
+  background-color: #ffffff
+  border: 0
+
+.navbar.affix
+  width: 100%
+  top: 0
+
+#nav
+  z-index: 998
+
+.row.no-gutters
+  margin-right: 0
+  margin-left: 0
+
+.row.no-gutters > [class*='col-']
+  padding-right: 0
+  padding-left: 0
+
+.gallery_widget
+  margin-bottom: 10px
+
+.video_widget
+  list-style: none
+  margin: 0
+  padding: 20px
+  background: #e3e3e3
+  li
+    margin: 0 0 15px 0
+    padding: 0 0 15px 0
+    border-bottom: 1px solid #cccccc
+    a
+      h4.video_title
+        margin: 0 0 5px 0
+        padding: 0
+        font-size: 1.2em
+        font-family: $primaryfont
+        font-weight: bold
+        color: $dark_gray
+    .thumbnail.video
+      margin-bottom: 0
+      padding-right: 15px
+      background: transparent
+    .video_meta
+      font-size: 0.80em
+      line-height: 1.0em
+  li:last-child
+    border-bottom: 0
+    margin-bottom: 0
+    padding-bottom: 0
+
+.gallery_album
+  margin: 15px 0 15px 0
+.gallery_thumb
+  width: 100%
+  height: 200px
+  position: relative
+  overflow: hidden
+  a.background
+    width: 100%
+    height: 200px
+    background-size: cover
+    transition: $transition
+    z-index: 11
+    position: relative
+    display: block
+.gallery_thumb:hover > .background
+  -moz-transform: scale(1.1,1.1)
+  -webkit-transform: scale(1.1,1.1)
+  transform: scale(1.1,1.1)
+.gallery_title
+  background: url(../img/black_trans.png)
+  width: 100%
+  padding: 15px
+  color: #ffffff
+  font-family: $primaryfont
+  text-transform: uppercase
+  line-height: 1.0em
+  font-weight: bold
+  position: absolute
+  bottom: 0
+  z-index: 12
+.view_album
+  display: block
+  background: $dark_gray
+  font-family: $primaryfont
+  height: 45px
+  line-height: 45px
+  padding: 0 15px
+  color: #ffffff
+  text-transform: lowercase
+  font-size: 1.2em
+  transition: $transition
+  font-weight: bold
+  span
+    float: right
+    position: relative
+    top: 14px
+    font-size: 0.9em
+.view_album:hover
+  text-decoration: none
+  background: #2f3336
+  cursor: pointer
+  color: #ffffff
+
+.gallery_img_wrap
+  width: 100%
+  height: 175px
+  position: relative
+  overflow: hidden
+  margin: 15px 0 15px 0
+  .gallery_img
+    height: 175px
+    width: 100%
+    background-size: cover
+    transition: $transition
+    display: table
+    border: 1px solid #c4c4c4
+    span
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+      font-size: 7.0em
+      color: #ffffff
+      background: url(../img/black_trans.png)
+      opacity: 0
+      transition: $transition
+      position: relative
+  .gallery_img:hover span
+    opacity: 1.0
+
+.video_thumb_wrap
+  width: 100%
+  height: 220px
+  position: relative
+  overflow: hidden
+  margin: 15px 0 15px 0
+  .video_thumb
+    height: 160px
+    width: 100%
+    background-size: cover
+    transition: $transition
+    display: table
+    a
+      border: 1px solid #c4c4c4
+    span
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+      font-size: 7.0em
+      color: #ffffff
+      opacity: 0.5
+      background: url(../img/black_trans.png)
+      transition: $transition
+      position: relative
+  .video_title
+    background-color: transparent
+    padding: 0px
+    font-size: 1.0em
+    font-family: $primaryfont
+    color: $dark_gray
+    font-weight: bold
+    height: 50px
+    padding: 10px 0 0 0
+  .video_thumb
+    height: 160px
+  .video_thumb:hover span
+    opacity: 1.0
+.video_thumb_wrap
+  height: auto
+
+@media only screen and (min-width : 1200px)
+  .video_thumb_wrap
+    .video_thumb
+      height: 170px
+
+.back_link
+  color: #888888
+  padding-bottom: 15px
+  display: inline-block
+  span.link_text
+    font-family: $primaryfont
+    text-transform: uppercase
+    font-weight: bold
+    padding-left: 10px
+.back_link:hover
+  color: #555555
+
+#sb-counter
+  display: none
+
+#sb-info
+  height: 30px
+  #sb-info-inner
+    height: 30px
+
+#sb-nav
+  height: 30px
+  float: left
+  width: 100%
+
+#sb-social
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1000
+  padding: 5px 0 0 0
+  ul
+    margin: 0
+    li
+      a
+        color: #ffffff
+
+.festival_box
+  width: 100%
+  display: table
+  height: 100px
+  background: $dark_gray
+  transition: $transition
+  h5
+    height: 100px
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    margin: 0
+    padding: 0
+.festival_box:hover
+  background: $pink
+
+div.captcha_img img.form-control
+  max-width: 200px !important
+  width: auto !important
+
+#fb-root
+  display: none
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style]
+  width: 100% !important
+  
+.pagination 
+  clear: both
+  padding: 0
+  position: relative
+  font-size: 11px
+  line-height: 13px
+  display: block !important
+
+.pagination span, .pagination a 
+  display: block
+  float: left
+  margin: 0px 4px 0px 0
+  padding: 6px 9px 5px 9px
+  text-decoration: none
+  width: auto
+  color: #333333
+  background: #e3e3e3
+  border: 1px solid #e3e3e3
+
+.pagination a:hover
+  color: #ffffff
+  background: $dark_gray
+  border: 1px solid $dark_gray
+
+.pagination .current
+  padding: 6px 9px 5px 9px
+  background: #ffffff
+  color: #333333
+  border: 1px solid #cccccc
+
+#sb-nav-previous
+  position: absolute
+  left: -60px
+  top: 50%
+  width: auto
+  height: auto
+  display: block
+  z-index: 1000
+  color: #ffffff
+#sb-nav-previous:hover
+  color: $dark_gray
+
+#sb-nav-next
+  position: absolute
+  right: -60px
+  top: 50%
+  display: block
+  width: auto
+  height: auto
+  z-index: 1000
+  color: #ffffff
+#sb-nav-next:hover
+  color: $dark_gray
